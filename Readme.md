@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов» [![Build status][travis-image]][travis-url]
 
 * Студент: [Эдуард Исполатов](https://up.htmlacademy.ru/react/3/user/865527).
-* Наставник: `Неизвестно`.
+* Наставник: [Папаха Николай](https://htmlacademy.ru/profile/id1224641)
 
 ---
 
