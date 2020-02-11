@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
 
-const name = `Король и шут`;
+import App from "../src/components/app/App";
+
+const errorsCount = 999;
 
 ReactDOM.render(
-    <App name={name} />,
+    <App errorsCount={errorsCount} />,
     document.getElementById(`root`)
 );
