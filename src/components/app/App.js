@@ -1,7 +1,12 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+
 import WelcomeScreen from '../welcome-screen/welcome-screen';
 
-// eslint-disable-next-line react/prop-types
-const App = ({errorsCount}) => <WelcomeScreen errorsCount={errorsCount} />;
+const rentalOffers = [`Beautiful & luxurious apartment at great location`, `Wood and stone place`];
 
-export default App;
+export const App = ({errorsCount}) => <WelcomeScreen errorsCount={errorsCount} rentalOffers={rentalOffers} />;
+
+App.propTypes = {
+  errorsCount: PropTypes.number.isRequired,
+};
