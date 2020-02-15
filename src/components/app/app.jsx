@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import WelcomeScreen from '../welcome-screen/welcome-screen';
+import Main from '../main/main';
 
 const rentalOffers = [`Beautiful & luxurious apartment at great location`, `Wood and stone place`];
 
-export const App = ({errorsCount}) => <WelcomeScreen errorsCount={errorsCount} rentalOffers={rentalOffers} />;
+export const App = ({errorsCount}) => <Main errorsCount={errorsCount} rentalOffers={rentalOffers} />;
 
 App.propTypes = {
   errorsCount: PropTypes.number.isRequired,

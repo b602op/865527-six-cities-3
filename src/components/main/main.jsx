@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const WelcomeScreen = (props) => {
+const Main = (props) => {
 
   const {errorsCount, rentalOffers} = props;
 
@@ -274,9 +274,9 @@ const WelcomeScreen = (props) => {
   );
 };
 
-WelcomeScreen.propTypes = {
+Main.propTypes = {
   errorsCount: PropTypes.number.isRequired,
   rentalOffers: PropTypes.array.isRequired,
 };
 
-export default WelcomeScreen;
+export default Main;
