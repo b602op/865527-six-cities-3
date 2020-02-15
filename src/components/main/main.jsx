@@ -3,7 +3,7 @@ import React from 'react';
 
 const Main = (props) => {
 
-  const {errorsCount, rentalOffers} = props;
+  const {errorsCount, rentalOffers, handleClick = ()=>{}} = props;
 
 
   const cards = {
@@ -67,8 +67,8 @@ const Main = (props) => {
               <span className="visually-hidden">Rating</span>
             </div>
           </div>
-          <h2 className="place-card__name">
-            <a href="#">Beautiful & luxurious apartment at great location</a>
+          <h2 className="place-card__name beautiful">
+            <a href="#" onClick={handleClick}>Beautiful & luxurious apartment at great location</a>
           </h2>
           <p className="place-card__type">Apartment</p>
         </div>
@@ -277,6 +277,7 @@ const Main = (props) => {
 Main.propTypes = {
   errorsCount: PropTypes.number.isRequired,
   rentalOffers: PropTypes.array.isRequired,
+  handleClick: PropTypes.func,
 };
 
 export default Main;
