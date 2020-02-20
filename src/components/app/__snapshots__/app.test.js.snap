@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Правильное отображение компонента App 1`] = `
+exports[`Render App 1`] = `
 <div
   className="page page--gray page--main"
 >
@@ -226,13 +226,13 @@ exports[`Правильное отображение компонента App 1`
           >
             <article
               className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
             >
               <div
                 className="place-card__mark"
               >
-                <span>
-                  Premium
-                </span>
+                <span />
               </div>
               <div
                 className="cities__image-wrapper place-card__image-wrapper"
@@ -241,10 +241,10 @@ exports[`Правильное отображение компонента App 1`
                   href="#"
                 >
                   <img
-                    alt="Place image"
+                    alt="Красивая и роскошная квартира в отличном месте"
                     className="place-card__image"
                     height="200"
-                    src="img/apartment-01.jpg"
+                    src="https://assets.htmlacademy.ru/img/icons/icon_keks-bane.v2.svg"
                     width="260"
                   />
                 </a>
@@ -261,7 +261,8 @@ exports[`Правильное отображение компонента App 1`
                     <b
                       className="place-card__price-value"
                     >
-                      €120
+                      €
+                      120
                     </b>
                     <span
                       className="place-card__price-text"
@@ -310,13 +311,13 @@ exports[`Правильное отображение компонента App 1`
                   </div>
                 </div>
                 <h2
-                  className="place-card__name beautiful"
+                  className="place-card__name"
+                  onClick={[Function]}
                 >
                   <a
                     href="#"
-                    onClick={[Function]}
                   >
-                    Beautiful & luxurious apartment at great location
+                    Красивая и роскошная квартира в отличном месте
                   </a>
                 </h2>
                 <p
@@ -328,7 +329,14 @@ exports[`Правильное отображение компонента App 1`
             </article>
             <article
               className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
             >
+              <div
+                className="place-card__mark"
+              >
+                <span />
+              </div>
               <div
                 className="cities__image-wrapper place-card__image-wrapper"
               >
@@ -336,10 +344,10 @@ exports[`Правильное отображение компонента App 1`
                   href="#"
                 >
                   <img
-                    alt="Place image"
+                    alt="Дерево и камень место"
                     className="place-card__image"
                     height="200"
-                    src="img/room.jpg"
+                    src="https://assets.htmlacademy.ru/img/icons/icon_keks-bane.v2.svg"
                     width="260"
                   />
                 </a>
@@ -356,7 +364,8 @@ exports[`Правильное отображение компонента App 1`
                     <b
                       className="place-card__price-value"
                     >
-                      €80
+                      €
+                      80
                     </b>
                     <span
                       className="place-card__price-text"
@@ -365,7 +374,7 @@ exports[`Правильное отображение компонента App 1`
                     </span>
                   </div>
                   <button
-                    className="place-card__bookmark-button place-card__bookmark-button--active button"
+                    className="place-card__bookmark-button button"
                     type="button"
                   >
                     <svg
@@ -380,7 +389,7 @@ exports[`Правильное отображение компонента App 1`
                     <span
                       className="visually-hidden"
                     >
-                      In bookmarks
+                      To bookmarks
                     </span>
                   </button>
                 </div>
@@ -393,7 +402,7 @@ exports[`Правильное отображение компонента App 1`
                     <span
                       style={
                         Object {
-                          "width": "80%",
+                          "width": "70%",
                         }
                       }
                     />
@@ -406,11 +415,12 @@ exports[`Правильное отображение компонента App 1`
                 </div>
                 <h2
                   className="place-card__name"
+                  onClick={[Function]}
                 >
                   <a
                     href="#"
                   >
-                    Wood and stone place
+                    Дерево и камень место
                   </a>
                 </h2>
                 <p
@@ -422,7 +432,14 @@ exports[`Правильное отображение компонента App 1`
             </article>
             <article
               className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
             >
+              <div
+                className="place-card__mark"
+              >
+                <span />
+              </div>
               <div
                 className="cities__image-wrapper place-card__image-wrapper"
               >
@@ -430,10 +447,10 @@ exports[`Правильное отображение компонента App 1`
                   href="#"
                 >
                   <img
-                    alt="Place image"
+                    alt="Вид на Москва - река"
                     className="place-card__image"
                     height="200"
-                    src="img/apartment-02.jpg"
+                    src="https://assets.htmlacademy.ru/img/icons/icon_keks-bane.v2.svg"
                     width="260"
                   />
                 </a>
@@ -450,7 +467,8 @@ exports[`Правильное отображение компонента App 1`
                     <b
                       className="place-card__price-value"
                     >
-                      €132
+                      €
+                      132
                     </b>
                     <span
                       className="place-card__price-text"
@@ -487,7 +505,7 @@ exports[`Правильное отображение компонента App 1`
                     <span
                       style={
                         Object {
-                          "width": "80%",
+                          "width": "50%",
                         }
                       }
                     />
@@ -500,11 +518,12 @@ exports[`Правильное отображение компонента App 1`
                 </div>
                 <h2
                   className="place-card__name"
+                  onClick={[Function]}
                 >
                   <a
                     href="#"
                   >
-                    Canal View Prinsengracht
+                    Вид на Москва - река
                   </a>
                 </h2>
                 <p
@@ -516,13 +535,13 @@ exports[`Правильное отображение компонента App 1`
             </article>
             <article
               className="cities__place-card place-card"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
             >
               <div
                 className="place-card__mark"
               >
-                <span>
-                  Premium
-                </span>
+                <span />
               </div>
               <div
                 className="cities__image-wrapper place-card__image-wrapper"
@@ -531,10 +550,10 @@ exports[`Правильное отображение компонента App 1`
                   href="#"
                 >
                   <img
-                    alt="Place image"
+                    alt="Хорошая, уютная, теплая квартира с большой кроватью"
                     className="place-card__image"
                     height="200"
-                    src="img/apartment-03.jpg"
+                    src="https://assets.htmlacademy.ru/img/icons/icon_keks-bane.v2.svg"
                     width="260"
                   />
                 </a>
@@ -551,7 +570,8 @@ exports[`Правильное отображение компонента App 1`
                     <b
                       className="place-card__price-value"
                     >
-                      €180
+                      €
+                      180
                     </b>
                     <span
                       className="place-card__price-text"
@@ -601,111 +621,18 @@ exports[`Правильное отображение компонента App 1`
                 </div>
                 <h2
                   className="place-card__name"
+                  onClick={[Function]}
                 >
                   <a
                     href="#"
                   >
-                    Nice, cozy, warm big bed apartment
+                    Хорошая, уютная, теплая квартира с большой кроватью
                   </a>
                 </h2>
                 <p
                   className="place-card__type"
                 >
                   Apartment
-                </p>
-              </div>
-            </article>
-            <article
-              className="cities__place-card place-card"
-            >
-              <div
-                className="cities__image-wrapper place-card__image-wrapper"
-              >
-                <a
-                  href="#"
-                >
-                  <img
-                    alt="Place image"
-                    className="place-card__image"
-                    height="200"
-                    src="img/room.jpg"
-                    width="260"
-                  />
-                </a>
-              </div>
-              <div
-                className="place-card__info"
-              >
-                <div
-                  className="place-card__price-wrapper"
-                >
-                  <div
-                    className="place-card__price"
-                  >
-                    <b
-                      className="place-card__price-value"
-                    >
-                      €80
-                    </b>
-                    <span
-                      className="place-card__price-text"
-                    >
-                      / night
-                    </span>
-                  </div>
-                  <button
-                    className="place-card__bookmark-button place-card__bookmark-button--active button"
-                    type="button"
-                  >
-                    <svg
-                      className="place-card__bookmark-icon"
-                      height="19"
-                      width="18"
-                    >
-                      <use
-                        xlinkHref="#icon-bookmark-active"
-                      />
-                    </svg>
-                    <span
-                      className="visually-hidden"
-                    >
-                      In bookmarks
-                    </span>
-                  </button>
-                </div>
-                <div
-                  className="place-card__rating rating"
-                >
-                  <div
-                    className="place-card__stars rating__stars"
-                  >
-                    <span
-                      style={
-                        Object {
-                          "width": "80%",
-                        }
-                      }
-                    />
-                    <span
-                      className="visually-hidden"
-                    >
-                      Rating
-                    </span>
-                  </div>
-                </div>
-                <h2
-                  className="place-card__name"
-                >
-                  <a
-                    href="#"
-                  >
-                    Wood and stone place
-                  </a>
-                </h2>
-                <p
-                  className="place-card__type"
-                >
-                  Private room
                 </p>
               </div>
             </article>

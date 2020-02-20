@@ -1,12 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+
 import Main from './main.jsx';
+import offers from '../../mocks/offers';
 
 it(`Правильное отображение компонента Main`, () => {
   const tree = renderer
     .create(<Main
       errorsCount={999}
-      rentalOffers={[`Beautiful & luxurious apartment at great location`, `Wood and stone place`]}/>)
+      offers = {offers}
+    />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();

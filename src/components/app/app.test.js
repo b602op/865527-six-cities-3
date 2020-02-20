@@ -1,12 +1,15 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import {App} from './app.jsx';
+import React from "react";
+import renderer from "react-test-renderer";
 
-it(`Правильное отображение компонента App`, () => {
+import {App} from "./app";
+import offers2 from "../../mocks/offers";
+
+it(`Render App`, () => {
   const tree = renderer
     .create(<App
       errorsCount={999}
-      rentalOffers={[`Beautiful & luxurious apartment at great location`, `Wood and stone place`]}/>)
+      offers={offers2}
+    />)
     .toJSON();
 
   expect(tree).toMatchSnapshot();

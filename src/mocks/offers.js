@@ -1,38 +1,42 @@
 export default [
   {
-    name: `Beautiful & luxurious apartment at great location`,
-    img: `img/apartment-01.jpg`,
+    name: `Красивая и роскошная квартира в отличном месте`,
+    img: null,
     price: 120,
     rating: 80,
     type: `Apartment`,
     period: `night`,
-    premium: true
+    premium: true,
+    id: 1,
   },
   {
-    name: `Wood and stone place`,
-    img: `img/room.jpg`,
+    name: `Дерево и камень место`,
+    img: null,
     price: 80,
     rating: 70,
     type: `Private room`,
     period: `night`,
-    premium: false
+    premium: false,
+    id: 2,
   },
   {
-    name: `Canal View Prinsengracht`,
-    img: `img/apartment-02.jpg`,
+    name: `Вид на Москва - река`,
+    img: null,
     price: 132,
     rating: 50,
     type: `Apartment`,
     period: `night`,
-    premium: true
+    premium: true,
+    id: 3,
   },
   {
-    name: `Nice, cozy, warm big bed apartment`,
-    img: `img/apartment-03.jpg`,
+    name: `Хорошая, уютная, теплая квартира с большой кроватью`,
+    img: null,
     price: 180,
     rating: 100,
     type: `Apartment`,
     period: `night`,
-    premium: false
+    premium: false,
+    id: 4,
   },
 ];
