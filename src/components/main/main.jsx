@@ -2,9 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import PlacesList from "../places-list/places-list";
 
-const Main = (props) => {
-
-  const {errorsCount, offers = []} = props;
+const Main = ({errorsCount, offers = []}) => {
 
   return (
     <div className="page page--gray page--main">
