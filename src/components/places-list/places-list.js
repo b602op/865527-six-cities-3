@@ -13,8 +13,9 @@ const PlacesList = ({offers = []}) => {
     <div className="cities__places-list places__list tabs__content">
       {offers.map((offer) => <PlaceCard key={offer.id} card={offer}
         onCardHover={handleCardHover}
-        onHeaderClick={() => {}}/>)}
+        onHeaderClick={() => {}}
         activeCard={activeCard}
+      />)}
     </div>
   );
 };
