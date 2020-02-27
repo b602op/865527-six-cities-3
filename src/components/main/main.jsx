@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import PlacesList from "../places-list/places-list";
 
-const Main = ({errorsCount, offers = []}) => {
+const Main = ({places, offers = []}) => {
 
   return (
     <div className="page page--gray page--main">
@@ -71,7 +71,7 @@ const Main = ({errorsCount, offers = []}) => {
           <div className="cities__places-container container">
             <section className="cities__places places">
               <h2 className="visually-hidden">Places</h2>
-              <b className="places__found">{errorsCount} places to stay in Amsterdam</b>
+              <b className="places__found">{places} places to stay in Amsterdam</b>
               <form className="places__sorting" action="#" method="get">
                 <span className="places__sorting-caption">Sort by</span>
                 <span className="places__sorting-type" tabIndex="0">
@@ -100,7 +100,7 @@ const Main = ({errorsCount, offers = []}) => {
 };
 
 Main.propTypes = {
-  errorsCount: PropTypes.number.isRequired,
+  places: PropTypes.number.isRequired,
   offers: PropTypes.array.isRequired
 };
 
