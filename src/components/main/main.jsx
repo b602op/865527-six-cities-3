@@ -101,7 +101,7 @@ const Main = ({places, offers = []}) => {
 
 Main.propTypes = {
   places: PropTypes.number.isRequired,
-  offers: PropTypes.array.isRequired
+  offers: PropTypes.array.isRequired,
 };
 
 export default Main;

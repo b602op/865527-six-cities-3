@@ -1,21 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {Link} from "react-router-dom";
 
 const PlaceCard = (props) => {
   const {card} = props;
-  const {mark, src, price, rating, name, type} = card;
-  const {onHeaderClick, onCardHover} = props;
-  const placeCardImg = src ? src : `https://assets.htmlacademy.ru/img/icons/icon_keks-bane.v2.svg`;
+  const {mark, img, price, rating, name, type, id} = card;
+  const placeCardImg = img ? img : `https://assets.htmlacademy.ru/img/icons/icon_keks-bane.v2.svg`;
+
+  const location = {
+    pathname: `/property/${id}`,
+    state: {
+      id,
+    }
+  };
 
   return (
-    <article className="cities__place-card place-card"
-      onMouseEnter={() => {
-        onCardHover(card);
-      }}
-      onMouseLeave={() => {
-        onCardHover(null);
-      }}>
-
+    <article className="cities__place-card place-card">
       <div className="place-card__mark">
         <span>{mark}</span>
       </div>
@@ -43,8 +43,8 @@ const PlaceCard = (props) => {
             <span className="visually-hidden">Rating</span>
           </div>
         </div>
-        <h2 className="place-card__name" onClick={onHeaderClick}>
-          <a href="#">{name}</a>
+        <h2 className="place-card__name">
+          <Link to={location}>{name}</Link>
         </h2>
         <p className="place-card__type">{type}</p>
       </div>
@@ -56,18 +56,15 @@ PlaceCard.propTypes = {
   card: PropTypes.shape({
     name: PropTypes.string,
     mark: PropTypes.string,
-    src: PropTypes.string,
+    img: PropTypes.string,
     price: PropTypes.number,
     rating: PropTypes.number,
     type: PropTypes.string,
+    id: PropTypes.number,
   }).isRequired,
-
-  onCardHover: PropTypes.func.isRequired,
-  onHeaderClick: PropTypes.func
 };
 
 PlaceCard.defaultProps = {
-  onHeaderClick: () => {}
 };
 
 export default PlaceCard;

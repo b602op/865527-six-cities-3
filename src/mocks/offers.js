@@ -1,7 +1,7 @@
-export default [
+export const offers = [
   {
     name: `Красивая и роскошная квартира в отличном месте`,
-    img: null,
+    img: `img/apartment-01.jpg`,
     price: 120,
     rating: 80,
     type: `Apartment`,
@@ -11,7 +11,7 @@ export default [
   },
   {
     name: `Дерево и камень место`,
-    img: null,
+    img: `img/apartment-02.jpg`,
     price: 80,
     rating: 70,
     type: `Private room`,
@@ -21,22 +21,12 @@ export default [
   },
   {
     name: `Вид на Москва - река`,
-    img: null,
+    img: `img/apartment-03.jpg`,
     price: 132,
     rating: 50,
     type: `Apartment`,
     period: `night`,
     premium: true,
     id: 3,
-  },
-  {
-    name: `Хорошая, уютная, теплая квартира с большой кроватью`,
-    img: null,
-    price: 180,
-    rating: 100,
-    type: `Apartment`,
-    period: `night`,
-    premium: false,
-    id: 4,
   },
 ];
